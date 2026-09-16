@@ -61,7 +61,9 @@
 }
 
 /* Base & Reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -95,7 +97,12 @@ img {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   color: var(--text-heading);
   font-weight: 800;
@@ -103,20 +110,45 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em;
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.25rem; }
-h5 { font-size: 1.1rem; }
-h6 { font-size: 0.95rem; }
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 0.95rem;
+}
 
 p {
   margin-bottom: 1rem;
 }
 
-.text-primary { color: var(--primary) !important; }
-.text-muted { color: var(--text-muted) !important; }
-.text-danger { color: var(--accent-alert) !important; }
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+.text-danger {
+  color: var(--accent-alert) !important;
+}
 
 /* Layout Container */
 .container {
@@ -335,6 +367,14 @@ main {
   color: var(--text-white);
   border-color: var(--primary);
   box-shadow: 0 4px 10px rgba(60, 116, 94, 0.25);
+}
+
+.btn-outline-white:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(60, 116, 94, 0.35);
+  color: var(--text-white);
 }
 
 .btn-primary:hover {
@@ -1246,6 +1286,7 @@ main {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1255,12 +1296,15 @@ main {
   .navbar {
     height: 72px;
   }
+
   .brand-tagline {
     display: none;
   }
+
   .mobile-toggle {
     display: block;
   }
+
   .nav-menu {
     position: fixed;
     top: 72px;
@@ -1272,13 +1316,16 @@ main {
     display: none;
     box-shadow: var(--shadow-xl);
   }
+
   .nav-menu.active {
     display: flex;
   }
+
   .nav-link {
     width: 100%;
     padding: 12px 16px;
   }
+
   .dropdown-menu {
     position: static;
     opacity: 1;
@@ -1289,17 +1336,21 @@ main {
     width: 100%;
     margin-top: 6px;
   }
+
   .dropdown-item {
     color: #e2f1ea;
   }
+
   .dropdown-item:hover {
     background-color: rgba(255, 255, 255, 0.14);
     color: #ffffff;
   }
+
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 32px;
   }
+
   .footer-bottom {
     flex-direction: column;
     text-align: center;
