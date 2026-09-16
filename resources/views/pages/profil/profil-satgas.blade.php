@@ -42,21 +42,49 @@
                     Satgas PPKS berkomitmen untuk menjaga kerahasiaan identitas pelapor dan korban, memberikan layanan pendampingan psikologis dan hukum, serta memastikan proses penanganan yang adil, transparan, dan bebas dari pengaruh relasi kuasa di lingkungan akademik.
                 </p>
 
-                <!-- Visi & Misi (tetap dalam format terstruktur) -->
-                <div style="background: var(--bg-surface); border-left: 4px solid var(--primary); border-radius: 0 var(--radius-lg) var(--radius-lg) 0; padding: 28px; box-shadow: var(--shadow-sm);">
-                    <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--primary);">Visi</h3>
-                    <p style="font-style: italic; color: #334155; margin-bottom: 28px; font-size: 1.02rem; line-height: 1.7;">
-                        "Menjadi garda terdepan terciptanya lingkungan akademik UPN 'Veteran' Yogyakarta yang berkarakter bela negara, inklusif, humanis, dan nir-kekerasan seksual bagi seluruh sivitas akademika."
-                    </p>
+                <!-- Visi & Misi (Tanpa Card Box, dengan Logo Satgas) -->
+                <div style="margin-top: 36px; padding-top: 32px; border-top: 1px solid var(--border-subtle);">
+                    <div class="visi-misi-wrapper" style="display: grid; grid-template-columns: 180px 1fr; gap: 36px; align-items: flex-start;">
+                        <!-- Logo Satgas -->
+                        <div style="text-align: center;">
+                            <img src="{{ asset('images/logo satgas.jpg') }}"
+                                 alt="Logo Satgas PPKS UPN Veteran Yogyakarta"
+                                 style="max-width: 100%; height: auto; border-radius: var(--radius-lg); display: block; margin: 0 auto;"
+                                 onerror="this.onerror=null; this.src='{{ asset('images/logo-satgas.png') }}';">
+                            <span style="display: block; margin-top: 10px; font-size: 0.78rem; font-weight: 600; color: var(--primary); letter-spacing: 0.04em;">
+                                SATGAS PPKS UPNVY
+                            </span>
+                        </div>
 
-                    <h3 style="font-size: 1.25rem; margin-bottom: 14px; color: var(--primary);">Misi</h3>
-                    <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 10px; color: #334155; line-height: 1.7;">
-                        <li>Melaksanakan edukasi dan pencegahan kekerasan seksual secara terstruktur dan berkelanjutan di seluruh fakultas dan unit kampus.</li>
-                        <li>Menyelenggarakan mekanisme penerimaan laporan yang aman, terpercaya, dan menjamin 100% kerahasiaan identitas korban serta saksi.</li>
-                        <li>Memberikan layanan pendampingan komprehensif mencakup pemulihan psikologis, pendampingan hukum, dan proteksi keselamatan akademik korban.</li>
-                        <li>Melakukan penanganan laporan secara adil, objektif, transparan, bebas dari intervensi relasi kuasa, serta merekomendasikan sanksi yang berkeadilan.</li>
-                    </ul>
+                        <!-- Teks Visi & Misi -->
+                        <div>
+                            <h3 style="font-size: 1.3rem; margin: 0 0 10px; color: var(--primary);">Visi</h3>
+                            <p style="font-style: italic; color: #334155; margin-bottom: 28px; font-size: 1.02rem; line-height: 1.75;">
+                                "Menjadi garda terdepan terciptanya lingkungan akademik UPN 'Veteran' Yogyakarta yang berkarakter bela negara, inklusif, humanis, dan nir-kekerasan seksual bagi seluruh sivitas akademika."
+                            </p>
+
+                            <h3 style="font-size: 1.3rem; margin: 0 0 12px; color: var(--primary);">Misi</h3>
+                            <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 10px; color: #334155; line-height: 1.75; margin: 0;">
+                                <li>Melaksanakan edukasi dan pencegahan kekerasan seksual secara terstruktur dan berkelanjutan di seluruh fakultas dan unit kampus.</li>
+                                <li>Menyelenggarakan mekanisme penerimaan laporan yang aman, terpercaya, dan menjamin 100% kerahasiaan identitas korban serta saksi.</li>
+                                <li>Memberikan layanan pendampingan komprehensif mencakup pemulihan psikologis, pendampingan hukum, dan proteksi keselamatan akademik korban.</li>
+                                <li>Melakukan penanganan laporan secara adil, objektif, transparan, bebas dari intervensi relasi kuasa, serta merekomendasikan sanksi yang berkeadilan.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
+                <style>
+                    @media (max-width: 640px) {
+                        .visi-misi-wrapper {
+                            grid-template-columns: 1fr !important;
+                            gap: 24px !important;
+                        }
+                        .visi-misi-wrapper img {
+                            max-width: 140px !important;
+                        }
+                    }
+                </style>
             </div>
 
             <!-- Sidebar Info Box -->
