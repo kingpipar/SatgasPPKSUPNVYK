@@ -104,16 +104,9 @@
             </div>
         @endif
 
-        <!-- Deskripsi Kegiatan di Bawah Slideshow -->
-        <div style="max-width: 960px; margin: 0 auto 48px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 36px; box-shadow: var(--shadow-sm);">
+        <!-- Deskripsi Kegiatan di Bawah Slideshow (Tanpa Card) -->
+        <div style="max-width: 960px; margin: 0 auto 48px;">
             <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2">
-                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                    <polyline points="14 2 14 8 20 8"></polyline>
-                    <line x1="16" y1="13" x2="8" y2="13"></line>
-                    <line x1="16" y1="17" x2="8" y2="17"></line>
-                    <polyline points="10 9 9 9 8 9"></polyline>
-                </svg>
                 <h2 style="font-size: 1.35rem; color: var(--primary); margin: 0;">Deskripsi Kegiatan</h2>
             </div>
             <p style="color: #334155; line-height: 1.85; font-size: 1.02rem; margin: 0; white-space: pre-line;">{{ $galeri->deskripsi_singkat }}</p>

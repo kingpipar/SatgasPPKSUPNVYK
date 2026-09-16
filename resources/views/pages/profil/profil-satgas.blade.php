@@ -28,7 +28,27 @@
 
             <!-- Konten Utama -->
             <div>
-                <h2 style="font-size: 1.6rem; margin-bottom: 18px; color: var(--primary);">Latar Belakang</h2>
+                <!-- Logo Satgas di Bagian Atas -->
+                <div style="display: flex; align-items: center; gap: 28px; margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid var(--border-subtle); flex-wrap: wrap;">
+                    <img src="{{ asset('images/logo satgas.jpg') }}"
+                         alt="Logo Satgas PPKS UPN Veteran Yogyakarta"
+                         style="width: 130px; height: auto; border-radius: var(--radius-lg); flex-shrink: 0;"
+                         onerror="this.onerror=null; this.src='{{ asset('images/logo-satgas.png') }}';">
+                    <div style="flex: 1; min-width: 240px;">
+                        <span style="font-size: 0.82rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">
+                            Profil Satuan Tugas
+                        </span>
+                        <h2 style="font-size: 1.5rem; margin: 0 0 8px; color: var(--text-heading); line-height: 1.3;">
+                            Satgas PPKS UPN "Veteran" Yogyakarta
+                        </h2>
+                        <p style="color: #64748b; margin: 0; line-height: 1.6; font-size: 0.92rem;">
+                            Organ resmi kampus dalam pencegahan, penanganan laporan, serta pemulihan korban kekerasan seksual di lingkungan UPN "Veteran" Yogyakarta.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Latar Belakang -->
+                <h3 style="font-size: 1.35rem; margin-bottom: 16px; color: var(--primary);">Latar Belakang</h3>
                 <p style="text-align: justify; line-height: 1.85; color: #334155; margin-bottom: 16px;">
                     Satuan Tugas Pencegahan dan Penanganan Kekerasan Seksual (Satgas PPKS) UPN "Veteran" Yogyakarta dibentuk berdasarkan amanah regulasi nasional yang mewajibkan setiap perguruan tinggi untuk memiliki organ khusus penanganan kekerasan seksual. Dasar hukum utama pembentukannya adalah <strong>Permendikbudristek Nomor 55 Tahun 2024</strong> tentang Pencegahan dan Penanganan Kekerasan di Lingkungan Perguruan Tinggi, yang menggantikan regulasi sebelumnya.
                 </p>
@@ -38,53 +58,25 @@
                 <p style="text-align: justify; line-height: 1.85; color: #334155; margin-bottom: 16px;">
                     Adapun pedoman operasional teknis penyelenggaraan Satgas PPKS secara komprehensif diatur dalam <strong>Keputusan Rektor UPN "Veteran" Yogyakarta Nomor 1377 Tahun 2026</strong> tentang Pedoman Operasional Standar Satgas PPKS UPN "Veteran" Yogyakarta, yang mencakup prosedur penanganan laporan, mekanisme pendampingan korban, serta tata kelola kelembagaan.
                 </p>
-                <p style="text-align: justify; line-height: 1.85; color: #334155; margin-bottom: 40px;">
+                <p style="text-align: justify; line-height: 1.85; color: #334155; margin-bottom: 36px;">
                     Satgas PPKS berkomitmen untuk menjaga kerahasiaan identitas pelapor dan korban, memberikan layanan pendampingan psikologis dan hukum, serta memastikan proses penanganan yang adil, transparan, dan bebas dari pengaruh relasi kuasa di lingkungan akademik.
                 </p>
 
-                <!-- Visi & Misi (Tanpa Card Box, dengan Logo Satgas) -->
-                <div style="margin-top: 36px; padding-top: 32px; border-top: 1px solid var(--border-subtle);">
-                    <div class="visi-misi-wrapper" style="display: grid; grid-template-columns: 180px 1fr; gap: 36px; align-items: flex-start;">
-                        <!-- Logo Satgas -->
-                        <div style="text-align: center;">
-                            <img src="{{ asset('images/logo satgas.jpg') }}"
-                                 alt="Logo Satgas PPKS UPN Veteran Yogyakarta"
-                                 style="max-width: 100%; height: auto; border-radius: var(--radius-lg); display: block; margin: 0 auto;"
-                                 onerror="this.onerror=null; this.src='{{ asset('images/logo-satgas.png') }}';">
-                            <span style="display: block; margin-top: 10px; font-size: 0.78rem; font-weight: 600; color: var(--primary); letter-spacing: 0.04em;">
-                                SATGAS PPKS UPNVY
-                            </span>
-                        </div>
+                <!-- Visi & Misi (Tanpa Card Box) -->
+                <div style="padding-top: 24px; border-top: 1px solid var(--border-subtle);">
+                    <h3 style="font-size: 1.35rem; margin: 0 0 10px; color: var(--primary);">Visi</h3>
+                    <p style="font-style: italic; color: #334155; margin-bottom: 24px; font-size: 1.02rem; line-height: 1.75;">
+                        "Menjadi garda terdepan terciptanya lingkungan akademik UPN 'Veteran' Yogyakarta yang berkarakter bela negara, inklusif, humanis, dan nir-kekerasan seksual bagi seluruh sivitas akademika."
+                    </p>
 
-                        <!-- Teks Visi & Misi -->
-                        <div>
-                            <h3 style="font-size: 1.3rem; margin: 0 0 10px; color: var(--primary);">Visi</h3>
-                            <p style="font-style: italic; color: #334155; margin-bottom: 28px; font-size: 1.02rem; line-height: 1.75;">
-                                "Menjadi garda terdepan terciptanya lingkungan akademik UPN 'Veteran' Yogyakarta yang berkarakter bela negara, inklusif, humanis, dan nir-kekerasan seksual bagi seluruh sivitas akademika."
-                            </p>
-
-                            <h3 style="font-size: 1.3rem; margin: 0 0 12px; color: var(--primary);">Misi</h3>
-                            <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 10px; color: #334155; line-height: 1.75; margin: 0;">
-                                <li>Melaksanakan edukasi dan pencegahan kekerasan seksual secara terstruktur dan berkelanjutan di seluruh fakultas dan unit kampus.</li>
-                                <li>Menyelenggarakan mekanisme penerimaan laporan yang aman, terpercaya, dan menjamin 100% kerahasiaan identitas korban serta saksi.</li>
-                                <li>Memberikan layanan pendampingan komprehensif mencakup pemulihan psikologis, pendampingan hukum, dan proteksi keselamatan akademik korban.</li>
-                                <li>Melakukan penanganan laporan secara adil, objektif, transparan, bebas dari intervensi relasi kuasa, serta merekomendasikan sanksi yang berkeadilan.</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <h3 style="font-size: 1.35rem; margin: 0 0 12px; color: var(--primary);">Misi</h3>
+                    <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 10px; color: #334155; line-height: 1.75; margin: 0;">
+                        <li>Melaksanakan edukasi dan pencegahan kekerasan seksual secara terstruktur dan berkelanjutan di seluruh fakultas dan unit kampus.</li>
+                        <li>Menyelenggarakan mekanisme penerimaan laporan yang aman, terpercaya, dan menjamin 100% kerahasiaan identitas korban serta saksi.</li>
+                        <li>Memberikan layanan pendampingan komprehensif mencakup pemulihan psikologis, pendampingan hukum, dan proteksi keselamatan akademik korban.</li>
+                        <li>Melakukan penanganan laporan secara adil, objektif, transparan, bebas dari intervensi relasi kuasa, serta merekomendasikan sanksi yang berkeadilan.</li>
+                    </ul>
                 </div>
-
-                <style>
-                    @media (max-width: 640px) {
-                        .visi-misi-wrapper {
-                            grid-template-columns: 1fr !important;
-                            gap: 24px !important;
-                        }
-                        .visi-misi-wrapper img {
-                            max-width: 140px !important;
-                        }
-                    }
-                </style>
             </div>
 
             <!-- Sidebar Info Box -->
