@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('images/logo-upn.png') }}">
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     @yield('styles')
@@ -24,42 +27,19 @@
     <header class="site-header">
         <div class="container">
             <nav class="navbar">
-                
-                <!-- 3 Logo Berjajar di Header -->
                 <div class="navbar-brand-logos">
-                    
-                    <!-- =======================================================================
-                         TEMPAT LOGO 1: LOGO KAMPUS (UPN "VETERAN" YOGYAKARTA)
-                         Petunjuk Anda:
-                         - Letakkan file gambar logo Anda di: public/images/logo-upn.png
-                         - Jika format file Anda .jpg atau .svg, ubah nama file di tag img di bawah
-                         ======================================================================= -->
                     <a href="{{ route('beranda') }}" class="brand-logo-item" title="UPN 'Veteran' Yogyakarta">
                         <img src="{{ asset('images/logo-upn.png') }}" 
                              alt="Logo UPN 'Veteran' Yogyakarta" 
                              class="header-logo-img"
                              onerror="this.onerror=null; this.src='{{ asset('images/logo-upn.svg') }}';">
                     </a>
-
-                    <!-- =======================================================================
-                         TEMPAT LOGO 2: LOGO SATGAS PPKS UPN "VETERAN" YOGYAKARTA
-                         Petunjuk Anda:
-                         - Letakkan file gambar logo Anda di: public/images/logo-satgas.png
-                         - Jika format file Anda .jpg atau .svg, ubah nama file di tag img di bawah
-                         ======================================================================= -->
                     <a href="{{ route('beranda') }}" class="brand-logo-item" title="Satgas PPKS UPN 'Veteran' Yogyakarta">
                         <img src="{{ asset('images/logo-satgas.png') }}" 
                              alt="Logo Satgas PPKS" 
                              class="header-logo-img"
                              onerror="this.onerror=null; this.src='{{ asset('images/logo-satgas.svg') }}';">
                     </a>
-
-                    <!-- =======================================================================
-                         TEMPAT LOGO 3: LOGO KAMPUS MERDEKA / KEMENDIKBUDRISTEK
-                         Petunjuk Anda:
-                         - Letakkan file gambar logo Anda di: public/images/logo-kampus-merdeka.png
-                         - Jika format file Anda .jpg atau .svg, ubah nama file di tag img di bawah
-                         ======================================================================= -->
                     <a href="{{ route('beranda') }}" class="brand-logo-item" title="Kampus Merdeka">
                         <img src="{{ asset('images/logo-kampus-merdeka.png') }}" 
                              alt="Logo Kampus Merdeka" 
@@ -104,29 +84,16 @@
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="{{ route('profil.satgas') }}" class="dropdown-item {{ request()->routeIs('profil.satgas') ? 'active' : '' }}">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                    </svg>
                                     <span>Profil Satgas</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="{{ route('profil.logo-filosofi') }}" class="dropdown-item {{ request()->routeIs('profil.logo-filosofi') ? 'active' : '' }}">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-                                    </svg>
                                     <span>Logo dan Filosofi</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="{{ route('profil.struktur-kepengurusan') }}" class="dropdown-item {{ request()->routeIs('profil.struktur-kepengurusan') ? 'active' : '' }}">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                        <circle cx="9" cy="7" r="4"></circle>
-                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                    </svg>
                                     <span>Struktur Kepengurusan</span>
                                 </a>
                             </li>
@@ -154,16 +121,25 @@
                         </a>
                     </li>
 
-                    <!-- CTA Cepat Pengaduan -->
+                    <!-- Search Bar -->
                     <li style="margin-left: 8px;">
-                        <a href="{{ config('satgas.google_form_url', env('GOOGLE_FORM_URL', 'https://forms.gle/samplePPKSreportURL')) }}" target="_blank" rel="noopener" class="btn btn-lapor btn-sm">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
-                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
-                                <line x1="12" y1="9" x2="12" y2="13"></line>
-                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
-                            </svg>
-                            <span>Layanan Pengaduan</span>
-                        </a>
+                        <form action="{{ route('pedoman.index') }}" method="GET" style="display: flex; align-items: center; gap: 6px;" role="search">
+                            <div style="position: relative;">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2.2" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); pointer-events: none;">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                                <input type="text" name="q" id="navSearch"
+                                       placeholder="Cari dokumen..."
+                                       aria-label="Cari dokumen pedoman"
+                                       style="width: 180px; padding: 7px 12px 7px 34px; border-radius: 20px; border: 1.5px solid rgba(255,255,255,0.35); background: rgba(255,255,255,0.12); color: #ffffff; font-size: 0.85rem; font-family: var(--font-body); outline: none; transition: all 0.2s;"
+                                       onfocus="this.style.background='rgba(255,255,255,0.22)'; this.style.borderColor='rgba(255,255,255,0.7)'; this.style.width='210px'"
+                                       onblur="this.style.background='rgba(255,255,255,0.12)'; this.style.borderColor='rgba(255,255,255,0.35)'; this.style.width='180px'">
+                            </div>
+                            <button type="submit" style="background: rgba(255,255,255,0.18); border: 1.5px solid rgba(255,255,255,0.3); border-radius: 20px; color: #ffffff; font-size: 0.82rem; padding: 6px 14px; cursor: pointer; font-family: var(--font-body); transition: background 0.2s;" onmouseenter="this.style.background='rgba(255,255,255,0.3)'" onmouseleave="this.style.background='rgba(255,255,255,0.18)'">
+                                Cari
+                            </button>
+                        </form>
                     </li>
                 </ul>
             </nav>

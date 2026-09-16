@@ -16,7 +16,7 @@
             </div>
             <h1 class="page-banner-title">Profil Satgas PPKS</h1>
             <p class="page-banner-desc">
-                Mengenal Satuan Tugas Pencegahan dan Penanganan Kekerasan Seksual UPN "Veteran" Yogyakarta, mandat resmi, visi misi, serta komitmen kampus bela negara.
+                Mengenal Satuan Tugas Pencegahan dan Penanganan Kekerasan Seksual UPN "Veteran" Yogyakarta, mandat resmi, visi, dan misi.
             </p>
         </div>
     </div>
@@ -24,76 +24,59 @@
 
 <section class="section">
     <div class="container">
-        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 40px; align-items: flex-start;">
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 48px; align-items: flex-start;">
+
+            <!-- Konten Utama -->
             <div>
-                <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--primary);">Latar Belakang Pembentukan</h2>
-                <p style="text-align: justify; line-height: 1.8;">
-                    Satuan Tugas Pencegahan dan Penanganan Kekerasan Seksual (Satgas PPKS) UPN "Veteran" Yogyakarta dibentuk sebagai wujud komitmen institusional universitas dalam memastikan lingkungan tridharma perguruan tinggi yang aman, bermartabat, berkeadilan gender, dan bebas dari segala bentuk kekerasan, perundungan, maupun pelecehan seksual.
+                <h2 style="font-size: 1.6rem; margin-bottom: 18px; color: var(--primary);">Latar Belakang</h2>
+                <p style="text-align: justify; line-height: 1.85; color: #334155; margin-bottom: 16px;">
+                    Satuan Tugas Pencegahan dan Penanganan Kekerasan Seksual (Satgas PPKS) UPN "Veteran" Yogyakarta dibentuk berdasarkan amanah regulasi nasional yang mewajibkan setiap perguruan tinggi untuk memiliki organ khusus penanganan kekerasan seksual. Dasar hukum utama pembentukannya adalah <strong>Permendikbudristek Nomor 55 Tahun 2024</strong> tentang Pencegahan dan Penanganan Kekerasan di Lingkungan Perguruan Tinggi, yang menggantikan regulasi sebelumnya.
                 </p>
-                <p style="text-align: justify; line-height: 1.8;">
-                    Sebagai kampus bela negara, UPN "Veteran" Yogyakarta memegang teguh nilai penghormatan atas harkat dan martabat kemanusiaan. Pembentukan Satgas PPKS dilandasi oleh mandat peraturan perundang-undangan nasional melalui <strong>Permendikbudristek Nomor 30 Tahun 2021</strong> dan ditegaskan kembali melalui <strong>Permendikbudristek Nomor 55 Tahun 2024</strong> serta payung hukum internal <strong>Peraturan Rektor UPN "Veteran" Yogyakarta Nomor 5 Tahun 2023</strong>.
+                <p style="text-align: justify; line-height: 1.85; color: #334155; margin-bottom: 16px;">
+                    Di tingkat institusi, keberadaan Satgas PPKS dikukuhkan melalui <strong>Peraturan Rektor UPN "Veteran" Yogyakarta Nomor 5 Tahun 2023</strong> tentang Pencegahan dan Penanganan Kekerasan Seksual di lingkungan UPN "Veteran" Yogyakarta, yang mengatur secara rinci mekanisme pencegahan, penanganan laporan, serta sanksi bagi pelaku.
+                </p>
+                <p style="text-align: justify; line-height: 1.85; color: #334155; margin-bottom: 16px;">
+                    Adapun pedoman operasional teknis penyelenggaraan Satgas PPKS secara komprehensif diatur dalam <strong>Keputusan Rektor UPN "Veteran" Yogyakarta Nomor 1377 Tahun 2026</strong> tentang Pedoman Operasional Standar Satgas PPKS UPN "Veteran" Yogyakarta, yang mencakup prosedur penanganan laporan, mekanisme pendampingan korban, serta tata kelola kelembagaan.
+                </p>
+                <p style="text-align: justify; line-height: 1.85; color: #334155; margin-bottom: 40px;">
+                    Satgas PPKS berkomitmen untuk menjaga kerahasiaan identitas pelapor dan korban, memberikan layanan pendampingan psikologis dan hukum, serta memastikan proses penanganan yang adil, transparan, dan bebas dari pengaruh relasi kuasa di lingkungan akademik.
                 </p>
 
-                <div style="margin-top: 36px; padding: 28px; background: var(--bg-surface); border-left: 4px solid var(--primary); border-radius: 0 var(--radius-lg) var(--radius-lg) 0; box-shadow: var(--shadow-sm);">
-                    <h3 style="font-size: 1.35rem; margin-bottom: 12px; color: var(--primary);">Visi Satgas PPKS</h3>
-                    <p style="font-style: italic; color: #334155; margin-bottom: 20px; font-size: 1.05rem;">
+                <!-- Visi & Misi (tetap dalam format terstruktur) -->
+                <div style="background: var(--bg-surface); border-left: 4px solid var(--primary); border-radius: 0 var(--radius-lg) var(--radius-lg) 0; padding: 28px; box-shadow: var(--shadow-sm);">
+                    <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--primary);">Visi</h3>
+                    <p style="font-style: italic; color: #334155; margin-bottom: 28px; font-size: 1.02rem; line-height: 1.7;">
                         "Menjadi garda terdepan terciptanya lingkungan akademik UPN 'Veteran' Yogyakarta yang berkarakter bela negara, inklusif, humanis, dan nir-kekerasan seksual bagi seluruh sivitas akademika."
                     </p>
 
-                    <h3 style="font-size: 1.35rem; margin-bottom: 12px; color: var(--primary);">Misi Utama</h3>
-                    <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 10px; color: #334155;">
+                    <h3 style="font-size: 1.25rem; margin-bottom: 14px; color: var(--primary);">Misi</h3>
+                    <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 10px; color: #334155; line-height: 1.7;">
                         <li>Melaksanakan edukasi dan pencegahan kekerasan seksual secara terstruktur dan berkelanjutan di seluruh fakultas dan unit kampus.</li>
                         <li>Menyelenggarakan mekanisme penerimaan laporan yang aman, terpercaya, dan menjamin 100% kerahasiaan identitas korban serta saksi.</li>
                         <li>Memberikan layanan pendampingan komprehensif mencakup pemulihan psikologis, pendampingan hukum, dan proteksi keselamatan akademik korban.</li>
                         <li>Melakukan penanganan laporan secara adil, objektif, transparan, bebas dari intervensi relasi kuasa, serta merekomendasikan sanksi yang berkeadilan.</li>
                     </ul>
                 </div>
-
-                <div style="margin-top: 40px;">
-                    <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--primary);">Nilai-Nilai Kerja (Core Values)</h2>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
-                        <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 20px; border-radius: var(--radius-md);">
-                            <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 8px;">1. Berpihak pada Korban</h4>
-                            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0;">Mengutamakan keselamatan jiwa, kesehatan mental, dan pemulihan hak-hak korban.</p>
-                        </div>
-                        <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 20px; border-radius: var(--radius-md);">
-                            <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 8px;">2. Kerahasiaan Penuh</h4>
-                            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0;">Identitas pelapor, korban, dan materi penanganan dijaga ketat di bawah sumpah jabatan.</p>
-                        </div>
-                        <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 20px; border-radius: var(--radius-md);">
-                            <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 8px;">3. Non-Diskriminasi</h4>
-                            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0;">Layanan diberikan setara tanpa memandang gender, suku, agama, ras, maupun status jabatan akademik.</p>
-                        </div>
-                        <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 20px; border-radius: var(--radius-md);">
-                            <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 8px;">4. Akuntabel &amp; Adil</h4>
-                            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0;">Investigasi dijalankan berbasis pembuktian fakta yang objektif dan bebas konflik kepentingan.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <!-- Sidebar Info Box -->
             <div style="position: sticky; top: 110px;">
                 <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 28px; box-shadow: var(--shadow-md);">
-                    <h3 style="font-size: 1.25rem; margin-bottom: 18px; color: var(--primary); border-bottom: 2px solid var(--primary-subtle); padding-bottom: 8px;">
-                        Dasar Hukum Mandat
+                    <h3 style="font-size: 1.1rem; margin-bottom: 18px; color: var(--primary); border-bottom: 2px solid var(--primary-subtle); padding-bottom: 8px;">
+                        Dasar Hukum
                     </h3>
-                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 0.9rem;">
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 0.88rem;">
                         <li style="display: flex; gap: 10px;">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" style="flex-shrink: 0;"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
-                            <span><strong>Permendikbudristek No. 30/2021</strong> tentang PPKS di Lingkungan Perguruan Tinggi.</span>
-                        </li>
-                        <li style="display: flex; gap: 10px;">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" style="flex-shrink: 0;"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" style="flex-shrink: 0; margin-top: 1px;"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
                             <span><strong>Permendikbudristek No. 55/2024</strong> tentang Pencegahan dan Penanganan Kekerasan di PT.</span>
                         </li>
                         <li style="display: flex; gap: 10px;">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" style="flex-shrink: 0;"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" style="flex-shrink: 0; margin-top: 1px;"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
                             <span><strong>Peraturan Rektor UPNVY No. 5/2023</strong> tentang Pencegahan &amp; Penanganan Kekerasan Seksual.</span>
                         </li>
                         <li style="display: flex; gap: 10px;">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" style="flex-shrink: 0;"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
-                            <span><strong>Keputusan Rektor UPNVY</strong> tentang Pengangkatan Anggota Satgas PPKS.</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" style="flex-shrink: 0; margin-top: 1px;"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                            <span><strong>KEP Rektor UPNVY No. 1377/2026</strong> tentang Pedoman Operasional Standar Satgas PPKS.</span>
                         </li>
                     </ul>
 

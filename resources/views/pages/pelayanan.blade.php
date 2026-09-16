@@ -22,53 +22,6 @@
 
 <section class="section">
     <div class="container">
-
-        <!-- Banner CTA Utama ke Google Form Eksternal -->
-        <div class="reporting-hero-banner">
-            <span style="background: rgba(255, 255, 255, 0.2); padding: 5px 16px; border-radius: var(--radius-full); font-size: 0.85rem; font-weight: 700; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.05em;">
-                Kanal Resmi Pengaduan Terpadu
-            </span>
-            <h3>Formulir Pelaporan Kekerasan Seksual Daring</h3>
-            <p>
-                Jika Anda menjadi korban atau saksi dugaan kekerasan seksual di lingkungan kampus UPN "Veteran" Yogyakarta, laporkan segera melalui formulir daring terenkripsi. Identitas Anda dijamin 100% rahasia dan aman dari segala bentuk ancaman maupun intimidasi.
-            </p>
-            <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
-                <a href="{{ $googleFormUrl }}" target="_blank" rel="noopener noreferrer" class="btn btn-lapor btn-lg" style="box-shadow: 0 6px 20px rgba(217, 83, 79, 0.45);">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
-                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
-                        <line x1="12" y1="9" x2="12" y2="13"></line>
-                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
-                    </svg>
-                    <span>Buka Google Form Pengaduan Resmi</span>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                        <line x1="7" y1="17" x2="17" y2="7"></line>
-                        <polyline points="7 7 17 7 17 17"></polyline>
-                    </svg>
-                </a>
-            </div>
-
-            <div class="hotline-pills">
-                <div class="hotline-pill">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                    <span>Hotline Darurat: 081225573747</span>
-                </div>
-                <div class="hotline-pill">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                    <span>Waktu Respon Awal: Maks. 3x24 Jam</span>
-                </div>
-                <div class="hotline-pill">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                    <span>Anonimitas Dijamin</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- =======================================================================
-             BAGAN GAMBAR ALUR / SOP PROSES PELAPORAN
-             Petunjuk Anda:
-             - Letakkan file gambar alur/diagram SOP Anda di: public/images/alur-pelaporan.png
-             - Jika file belum ada, sistem otomatis menampilkan diagram alur SVG resmi
-             ======================================================================= -->
         <div class="sop-visual-container" id="alur">
             <div class="section-header" style="margin-bottom: 24px;">
                 <span class="section-tag">Diagram Standar Operasional Prosedur</span>

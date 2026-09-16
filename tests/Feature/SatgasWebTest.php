@@ -46,7 +46,7 @@ class SatgasWebTest extends TestCase
         $resLogo = $this->get('/profil/logo-filosofi');
         $resLogo->assertStatus(200);
         $resLogo->assertSee('Logo dan Filosofi');
-        $resLogo->assertSee('3c745e');
+        $resLogo->assertSee('Filosofi Logo');
 
         // 3. Struktur Kepengurusan
         $resStruktur = $this->get('/profil/struktur-kepengurusan');
@@ -67,18 +67,22 @@ class SatgasWebTest extends TestCase
     }
 
     /**
-     * Test Halaman Pedoman & Download PDF
+     * Test Halaman Pedoman — flat list + search + download PDF
      */
     public function test_pedoman_page_and_download(): void
     {
         $response = $this->get('/pedoman');
         $response->assertStatus(200);
-        $response->assertSee('Surat Rektor');
-        $response->assertSee('SOP');
-        $response->assertSee('Pedoman Pencegahan');
-        $response->assertSee('Kode Etik');
+        $response->assertSee('Peraturan Rektor Nomor 5 Tahun 2023');
+        $response->assertSee('Permendikbudristek');
+        $response->assertSee('KEP 1377');
 
-        // Test download endpoint
+        // Test search works
+        $resSearch = $this->get('/pedoman?q=SOP');
+        $resSearch->assertStatus(200);
+        $resSearch->assertSee('Standar Operasional Prosedur');
+
+        // Test download endpoint (file nyata ada di storage)
         $resDownload = $this->get('/pedoman/download/peraturan-rektor-no-5-2023');
         $resDownload->assertStatus(200);
         $this->assertEquals('application/pdf', $resDownload->headers->get('content-type'));

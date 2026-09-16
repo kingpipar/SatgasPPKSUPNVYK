@@ -16,7 +16,7 @@
             </div>
             <h1 class="page-banner-title">Logo dan Filosofi Lambang</h1>
             <p class="page-banner-desc">
-                Makna simbolik, filosofi elemen visual, dan representasi nilai perlindungan di balik lambang resmi Satgas PPKS UPN "Veteran" Yogyakarta.
+                Makna simbolik dan filosofi di balik lambang resmi Satgas PPKS UPN "Veteran" Yogyakarta.
             </p>
         </div>
     </div>
@@ -24,127 +24,93 @@
 
 <section class="section">
     <div class="container">
-        <!-- Visual Logo Showcase Card -->
-        <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 40px; box-shadow: var(--shadow-md); margin-bottom: 50px;">
-            <div style="display: grid; grid-template-columns: 320px 1fr; gap: 40px; align-items: center;">
-                
-                <!-- =======================================================================
-                     TEMPAT GAMBAR LOGO UTAMA
-                     Petunjuk Anda:
-                     - Letakkan file gambar logo Satgas Anda di: public/images/logo-satgas.png
-                     - Jika file belum ada, sistem menampilkan fallback vector SVG yang estetik
-                     ======================================================================= -->
-                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(145deg, #f0f7f3 0%, #e2efe8 100%); border-radius: var(--radius-lg); padding: 36px; border: 1px solid var(--primary-border);">
-                    <img src="{{ asset('images/logo-satgas.png') }}" 
-                         alt="Logo Satgas PPKS UPN Veteran Yogyakarta" 
-                         style="max-width: 180px; height: auto;"
-                         onerror="this.onerror=null; this.src='{{ asset('images/logo-satgas.svg') }}';">
-                    <span style="margin-top: 16px; font-size: 0.82rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em;">
+
+        <!-- Logo + Filosofi Utama -->
+        <div style="display: grid; grid-template-columns: 280px 1fr; gap: 48px; align-items: flex-start; margin-bottom: 56px;">
+
+            <!-- Logo -->
+            <div style="text-align: center;">
+                <div style="background: linear-gradient(145deg, #f0f7f3 0%, #e2efe8 100%); border-radius: var(--radius-xl); padding: 40px 32px; border: 1px solid var(--primary-border);">
+                    <img src="{{ asset('images/logo satgas.jpg') }}"
+                         alt="Logo Satgas PPKS UPN Veteran Yogyakarta"
+                         style="max-width: 180px; height: auto; display: block; margin: 0 auto;"
+                         onerror="this.onerror=null; this.src='{{ asset('images/logo-satgas.png') }}';">
+                    <p style="margin-top: 16px; font-size: 0.82rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">
                         Lambang Resmi Satgas PPKS
-                    </span>
-                    <span style="font-size: 0.75rem; color: #64748b; margin-top: 4px;">
-                        UPN "Veteran" Yogyakarta
-                    </span>
+                    </p>
+                    <p style="font-size: 0.75rem; color: #64748b; margin: 0;">UPN "Veteran" Yogyakarta</p>
+                </div>
+            </div>
+
+            <!-- Narasi Filosofi -->
+            <div>
+                <span class="section-tag">Filosofi Logo</span>
+                <h2 style="font-size: 1.8rem; color: var(--primary); margin: 12px 0 24px;">Makna di Balik Lambang</h2>
+
+                <!-- a. Bentuk -->
+                <h3 style="font-size: 1.2rem; color: var(--text-heading); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid var(--primary-subtle);">a. Bentuk</h3>
+
+                <div style="margin-bottom: 20px; padding: 20px; background: var(--bg-surface); border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                    <h4 style="color: var(--primary); font-size: 1rem; margin: 0 0 10px;">• Lingkaran Luar (Hijau dan Biru)</h4>
+                    <p style="color: #334155; line-height: 1.75; margin: 0 0 10px;">
+                        Melambangkan kesatuan, inklusivitas, dan perlindungan menyeluruh dari Satuan Tugas. Warna hijau mencerminkan pertumbuhan dan harapan, sementara warna biru merepresentasikan kepercayaan dan stabilitas.
+                    </p>
+                    <p style="color: #334155; line-height: 1.75; margin: 0;">
+                        Lingkaran ini menggambarkan komitmen Satgas untuk menciptakan ruang aman dan responsif bagi seluruh anggota komunitas kampus.
+                    </p>
                 </div>
 
-                <div>
-                    <span class="section-tag">Filosofi Lambang</span>
-                    <h2 style="font-size: 1.9rem; margin-bottom: 14px; color: var(--primary);">
-                        Simbol Keberanian, Keadilan, dan Pemulihan
-                    </h2>
-                    <p style="color: var(--text-muted); line-height: 1.75; margin-bottom: 20px;">
-                        Logo Satgas PPKS UPN "Veteran" Yogyakarta dirancang dengan memadukan nilai-nilai bela negara, kepekaan kemanusiaan, serta ketegasan institusi dalam melindungi seluruh sivitas akademika. Setiap guratan garis, sudut, dan warna memiliki pesan filosofis yang mendalam sebagai komitmen perlindungan tanpa henti.
+                <div style="padding: 20px; background: var(--bg-surface); border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                    <h4 style="color: var(--primary); font-size: 1rem; margin: 0 0 10px;">• Tiga Figur Berpegangan Tangan (Pink, Hijau, Biru)</h4>
+                    <p style="color: #334155; line-height: 1.75; margin: 0 0 10px;">
+                        Merepresentasikan keberagaman individu dalam komunitas kampus, yakni mahasiswa, dosen, dan tenaga kependidikan. Figur-figur yang saling terhubung melambangkan kolaborasi, solidaritas, serta dukungan antar sesama dalam upaya pencegahan dan penanganan kekerasan.
                     </p>
-                    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
-                        <span style="display: inline-flex; align-items: center; gap: 6px; background: var(--primary-subtle); color: var(--primary); padding: 6px 14px; border-radius: var(--radius-full); font-size: 0.85rem; font-weight: 600;">
-                            #BelaNegaraTanpaKekerasan
-                        </span>
-                        <span style="display: inline-flex; align-items: center; gap: 6px; background: var(--primary-subtle); color: var(--primary); padding: 6px 14px; border-radius: var(--radius-full); font-size: 0.85rem; font-weight: 600;">
-                            #RuangAmanKampus
-                        </span>
-                        <span style="display: inline-flex; align-items: center; gap: 6px; background: var(--primary-subtle); color: var(--primary); padding: 6px 14px; border-radius: var(--radius-full); font-size: 0.85rem; font-weight: 600;">
-                            #BeraniBicara
-                        </span>
+                    <p style="color: #334155; line-height: 1.75; margin: 0;">
+                        Bentuknya yang mengalir mencerminkan pendekatan Satgas yang suportif, empatik, dan tidak menghakimi. Gerakan dua figur pinggir yang "membuka" ke atas menggambarkan harapan, optimisme, dan semangat bersama untuk menciptakan lingkungan yang lebih baik.
+                    </p>
+                </div>
+
+                <!-- b. Warna -->
+                <h3 style="font-size: 1.2rem; color: var(--text-heading); margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--primary-subtle);">b. Warna</h3>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+                    <!-- Pink -->
+                    <div style="padding: 20px; background: #fff0f6; border-radius: var(--radius-md); border: 1px solid #f9a8d4;">
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                            <span style="width: 20px; height: 20px; border-radius: 50%; background: #ec4899; display: inline-block; flex-shrink: 0;"></span>
+                            <h4 style="color: #9d174d; font-size: 0.95rem; margin: 0;">Pink (Figur Tengah)</h4>
+                        </div>
+                        <p style="font-size: 0.88rem; color: #4a1942; line-height: 1.65; margin: 0;">
+                            Menandakan kelembutan, empati, kasih sayang, dan keberanian. Warna ini mencerminkan pendekatan sensitif dalam mendampingi korban serta mendorong keberanian untuk bersuara.
+                        </p>
+                    </div>
+
+                    <!-- Hijau -->
+                    <div style="padding: 20px; background: var(--primary-subtle); border-radius: var(--radius-md); border: 1px solid var(--primary-border);">
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                            <span style="width: 20px; height: 20px; border-radius: 50%; background: var(--primary); display: inline-block; flex-shrink: 0;"></span>
+                            <h4 style="color: var(--primary-dark); font-size: 0.95rem; margin: 0;">Hijau (Figur Kiri)</h4>
+                        </div>
+                        <p style="font-size: 0.88rem; color: #1b382d; line-height: 1.65; margin: 0;">
+                            Melambangkan pertumbuhan, kesegaran, harapan, dan keamanan. Merepresentasikan upaya menciptakan lingkungan kampus yang asri dan bebas kekerasan serta proses pemulihan bagi korban.
+                        </p>
+                    </div>
+
+                    <!-- Biru -->
+                    <div style="padding: 20px; background: #eff6ff; border-radius: var(--radius-md); border: 1px solid #bfdbfe;">
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                            <span style="width: 20px; height: 20px; border-radius: 50%; background: #3b82f6; display: inline-block; flex-shrink: 0;"></span>
+                            <h4 style="color: #1e40af; font-size: 0.95rem; margin: 0;">Biru (Figur Kanan)</h4>
+                        </div>
+                        <p style="font-size: 0.88rem; color: #1e3a8a; line-height: 1.65; margin: 0;">
+                            Menandakan kepercayaan, ketenangan, profesionalisme, dan stabilitas. Menggambarkan komitmen Satgas untuk bekerja secara adil, profesional, dan dapat dipercaya oleh seluruh civitas akademika.
+                        </p>
                     </div>
                 </div>
+
             </div>
         </div>
 
-        <!-- Detail Makna Elemen Visual -->
-        <div class="section-header" style="text-align: left; max-width: 100%; margin-bottom: 30px;">
-            <h3 style="font-size: 1.7rem; color: var(--primary);">Uraian Makna Elemen &amp; Warna</h3>
-            <p style="color: var(--text-muted);">Penjabaran setiap komponen simbolik dalam logo:</p>
-        </div>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
-            <!-- Elemen 1: Perisai -->
-            <div class="feature-card">
-                <div class="feature-icon-box">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                    </svg>
-                </div>
-                <h4>1. Bentuk Perisai Perlindungan</h4>
-                <p>
-                    Melambangkan fungsi utama Satgas PPKS sebagai perisai pelindung, benteng keadilan, dan jaminan rasa aman bagi setiap mahasiswa, dosen, dan tenaga kependidikan di kampus.
-                </p>
-            </div>
-
-            <!-- Elemen 2: Warna Hijau Hutan UPN -->
-            <div class="feature-card">
-                <div class="feature-icon-box" style="background: #3c745e; color: #ffffff;">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"></circle>
-                    </svg>
-                </div>
-                <h4>2. Warna Hijau Tua (#3c745e)</h4>
-                <p>
-                    Warna identitas bela negara UPN "Veteran" Yogyakarta. Merefleksikan ketenangan, kedamaian, integritas nurani, serta komitmen etis pengabdian kampus kepada masyarakat dan bangsa.
-                </p>
-            </div>
-
-            <!-- Elemen 3: Tunas Harapan & Tangan Merangkul -->
-            <div class="feature-card">
-                <div class="feature-icon-box">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-                        <path d="M2 12h20"></path>
-                    </svg>
-                </div>
-                <h4>3. Tunas Kehidupan &amp; Tangan Perlindungan</h4>
-                <p>
-                    Bentuk tunas yang bertumbuh di dalam dekapan melambangkan proses pemulihan (trauma healing), harapan masa depan korban, serta dukungan penuh yang tidak menghakimi.
-                </p>
-            </div>
-
-            <!-- Elemen 4: Titik Emas Pencerahan -->
-            <div class="feature-card">
-                <div class="feature-icon-box" style="background: #fffbeb; color: #d97706;">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                    </svg>
-                </div>
-                <h4>4. Aksen Emas / Kuning</h4>
-                <p>
-                    Melambangkan kejujuran intelektual, optimisme, dan keberanian menegakkan kebenaran (*whistleblowing*) dalam membongkar tabir kekerasan seksual tanpa keraguan.
-                </p>
-            </div>
-
-            <!-- Elemen 5: Pita Tegas PPKS -->
-            <div class="feature-card">
-                <div class="feature-icon-box">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="3" y="11" width="18" height="10" rx="2"></rect>
-                        <circle cx="12" cy="5" r="2"></circle>
-                        <path d="M12 7v4"></path>
-                    </svg>
-                </div>
-                <h4>5. Pita / Tipografi Penegasan</h4>
-                <p>
-                    Menegaskan legalitas yuridis Satgas PPKS sebagai badan resmi yang berwenang menindaklanjuti laporan berdasarkan regulasi rektorat dan kementerian.
-                </p>
-            </div>
-        </div>
     </div>
 </section>
 @endsection

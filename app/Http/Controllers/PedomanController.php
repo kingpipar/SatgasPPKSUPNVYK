@@ -9,35 +9,24 @@ use Symfony\Component\HttpFoundation\StreamedResponse;
 class PedomanController extends Controller
 {
     /**
-     * Tampilkan daftar pedoman yang dikelompokkan per kategori
+     * Tampilkan daftar pedoman (flat list, dengan dukungan search query ?q=)
      */
     public function index(Request $request)
     {
         $semuaDokumen = config('pedoman.dokumen', []);
-        $kategoriList = config('pedoman.kategori_list', []);
 
-        $filterKategori = $request->query('kategori');
+        $query = trim($request->query('q', ''));
 
-        if ($filterKategori && in_array($filterKategori, $kategoriList)) {
-            $dokumenFiltered = array_filter($semuaDokumen, function ($doc) use ($filterKategori) {
-                return $doc['kategori'] === $filterKategori;
-            });
+        if ($query !== '') {
+            $dokumen = array_values(array_filter($semuaDokumen, function ($doc) use ($query) {
+                return str_contains(strtolower($doc['judul']), strtolower($query))
+                    || str_contains(strtolower($doc['deskripsi'] ?? ''), strtolower($query));
+            }));
         } else {
-            $dokumenFiltered = $semuaDokumen;
+            $dokumen = array_values($semuaDokumen);
         }
 
-        // Kelompokkan dokumen berdasarkan kategori
-        $dokumenPerKategori = [];
-        foreach ($kategoriList as $kat) {
-            $items = array_filter($dokumenFiltered, function ($doc) use ($kat) {
-                return $doc['kategori'] === $kat;
-            });
-            if (!empty($items)) {
-                $dokumenPerKategori[$kat] = array_values($items);
-            }
-        }
-
-        return view('pages.pedoman.index', compact('dokumenPerKategori', 'kategoriList', 'filterKategori'));
+        return view('pages.pedoman.index', compact('dokumen', 'query'));
     }
 
     /**
