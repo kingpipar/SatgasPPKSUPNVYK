@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100" width="120" height="100">
+  <defs>
+    <linearGradient id="kmBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0369A1" />
+    </linearGradient>
+    <linearGradient id="kmYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="kmRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#B91C1C" />
+    </linearGradient>
+  </defs>
+  <!-- Background Badge -->
+  <rect x="6" y="8" width="108" height="84" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+  <!-- Wing 1 (Top Blue) -->
+  <path d="M 30 25 C 45 20 75 22 88 32 C 78 35 55 35 40 38 Z" fill="url(#kmBlue)"/>
+  <!-- Wing 2 (Mid Yellow/Orange) -->
+  <path d="M 26 38 C 42 34 72 37 92 48 C 80 50 54 48 38 52 Z" fill="url(#kmYellow)"/>
+  <!-- Wing 3 (Bottom Red) -->
+  <path d="M 28 52 C 44 48 68 50 86 62 C 72 63 50 60 36 64 Z" fill="url(#kmRed)"/>
+  <!-- Typography -->
+  <text x="60" y="76" font-family="'Outfit', sans-serif" font-size="7.5" font-weight="900" fill="#0F172A" text-anchor="middle" letter-spacing="0.5">KAMPUS</text>
+  <text x="60" y="84" font-family="'Outfit', sans-serif" font-size="7" font-weight="900" fill="#0284C7" text-anchor="middle" letter-spacing="0.5">MERDEKA</text>
+</svg>
