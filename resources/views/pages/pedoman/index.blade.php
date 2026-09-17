@@ -60,7 +60,7 @@
 
                     <!-- Bagian Tombol Aksi di Bawah -->
                     <div style="display: flex; gap: 10px; padding-top: 16px; border-top: 1px solid var(--border-subtle);">
-                        <a href="{{ route('pedoman.lihat', $doc['slug']) }}" class="btn btn-outline btn-sm" style="flex: 1; justify-content: center;" title="Lihat/Preview file PDF di browser">
+                        <a href="{{ route('pedoman.lihat', $doc['slug']) }}" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="flex: 1; justify-content: center;" title="Lihat/Preview file PDF di browser">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                                 <circle cx="12" cy="12" r="3"></circle>

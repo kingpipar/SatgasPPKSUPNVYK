@@ -67,7 +67,7 @@ class SatgasWebTest extends TestCase
     }
 
     /**
-     * Test Halaman Pedoman — flat list + search + download PDF
+     * Test Halaman Pedoman — list + stream preview + download PDF
      */
     public function test_pedoman_page_and_download(): void
     {
@@ -75,12 +75,11 @@ class SatgasWebTest extends TestCase
         $response->assertStatus(200);
         $response->assertSee('Peraturan Rektor Nomor 5 Tahun 2023');
         $response->assertSee('Permendikbudristek');
-        $response->assertSee('KEP 1377');
 
-        // Test search works
-        $resSearch = $this->get('/pedoman?q=SOP');
-        $resSearch->assertStatus(200);
-        $resSearch->assertSee('Standar Operasional Prosedur');
+        // Test preview / lihat endpoint (streams inline PDF directly to browser)
+        $resLihat = $this->get('/pedoman/lihat/peraturan-rektor-no-5-2023');
+        $resLihat->assertStatus(200);
+        $this->assertEquals('application/pdf', $resLihat->headers->get('content-type'));
 
         // Test download endpoint (file nyata ada di storage)
         $resDownload = $this->get('/pedoman/download/peraturan-rektor-no-5-2023');

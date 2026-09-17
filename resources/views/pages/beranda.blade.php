@@ -95,14 +95,13 @@
             </div>
             <div style="display: flex; flex-direction: column; gap: 10px; flex-shrink: 0;">
                 <a href="{{ route('pelayanan') }}" class="btn btn-lapor btn-sm">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
                     <span>Pelajari Alur Pengaduan</span>
                 </a>
                 <a href="{{ config('satgas.google_form_url', env('GOOGLE_FORM_URL', '#')) }}" target="_blank" rel="noopener"
-                   style="display: inline-flex; align-items: center; gap: 6px; justify-content: center; font-size: 0.88rem; color: #c7e3d6; border: 1px solid rgba(255,255,255,0.3); border-radius: var(--radius-md); padding: 8px 14px; text-decoration: none; transition: all 0.2s;"
+                   style="display: inline-flex; align-items: center; gap: 6px; justify-content: center; font-size: 0.88rem; color: #ffffffff; border: 1px solid #ffffffff; border-radius: var(--radius-md); padding: 8px 14px; text-decoration: none; transition: all 0.2s;"
                    onmouseenter="this.style.color='#fff'; this.style.borderColor='#fff'"
                    onmouseleave="this.style.color='#c7e3d6'; this.style.borderColor='rgba(255,255,255,0.3)'">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    <!-- <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffffff" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> -->
                     Isi Google Form Pengaduan
                 </a>
             </div>
@@ -144,7 +143,7 @@
                         <p class="doc-desc">{{ $doc['deskripsi'] }}</p>
                     </div>
                     <div class="doc-actions">
-                        <a href="{{ route('pedoman.lihat', $doc['slug']) }}" class="btn btn-outline btn-sm">
+                        <a href="{{ route('pedoman.lihat', $doc['slug']) }}" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                             <span>Lihat</span>
                         </a>

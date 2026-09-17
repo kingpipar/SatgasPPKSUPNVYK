@@ -1,9 +1,7 @@
 @extends('layouts.app')
-
 @section('title', 'Profil Satgas — Satgas PPKS UPN "Veteran" Yogyakarta')
-
 @section('content')
-<!-- Page Header -->
+
 <div class="page-banner">
     <div class="container">
         <div class="page-banner-content">
@@ -25,10 +23,7 @@
 <section class="section">
     <div class="container">
         <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 48px; align-items: flex-start;">
-
-            <!-- Konten Utama -->
             <div>
-                <!-- Logo Satgas di Bagian Atas -->
                 <div style="display: flex; align-items: center; gap: 28px; margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid var(--border-subtle); flex-wrap: wrap;">
                     <img src="{{ asset('images/logo satgas.jpg') }}"
                          alt="Logo Satgas PPKS UPN Veteran Yogyakarta"
@@ -46,8 +41,6 @@
                         </p>
                     </div>
                 </div>
-
-                <!-- Latar Belakang -->
                 <h3 style="font-size: 1.35rem; margin-bottom: 16px; color: var(--primary);">Latar Belakang</h3>
                 <p style="text-align: justify; line-height: 1.85; color: #334155; margin-bottom: 16px;">
                     Satuan Tugas Pencegahan dan Penanganan Kekerasan Seksual (Satgas PPKS) UPN "Veteran" Yogyakarta dibentuk berdasarkan amanah regulasi nasional yang mewajibkan setiap perguruan tinggi untuk memiliki organ khusus penanganan kekerasan seksual. Dasar hukum utama pembentukannya adalah <strong>Permendikbudristek Nomor 55 Tahun 2024</strong> tentang Pencegahan dan Penanganan Kekerasan di Lingkungan Perguruan Tinggi, yang menggantikan regulasi sebelumnya.
@@ -55,14 +48,9 @@
                 <p style="text-align: justify; line-height: 1.85; color: #334155; margin-bottom: 16px;">
                     Di tingkat institusi, keberadaan Satgas PPKS dikukuhkan melalui <strong>Peraturan Rektor UPN "Veteran" Yogyakarta Nomor 5 Tahun 2023</strong> tentang Pencegahan dan Penanganan Kekerasan Seksual di lingkungan UPN "Veteran" Yogyakarta, yang mengatur secara rinci mekanisme pencegahan, penanganan laporan, serta sanksi bagi pelaku.
                 </p>
-                <p style="text-align: justify; line-height: 1.85; color: #334155; margin-bottom: 16px;">
-                    Adapun pedoman operasional teknis penyelenggaraan Satgas PPKS secara komprehensif diatur dalam <strong>Keputusan Rektor UPN "Veteran" Yogyakarta Nomor 1377 Tahun 2026</strong> tentang Pedoman Operasional Standar Satgas PPKS UPN "Veteran" Yogyakarta, yang mencakup prosedur penanganan laporan, mekanisme pendampingan korban, serta tata kelola kelembagaan.
-                </p>
                 <p style="text-align: justify; line-height: 1.85; color: #334155; margin-bottom: 36px;">
                     Satgas PPKS berkomitmen untuk menjaga kerahasiaan identitas pelapor dan korban, memberikan layanan pendampingan psikologis dan hukum, serta memastikan proses penanganan yang adil, transparan, dan bebas dari pengaruh relasi kuasa di lingkungan akademik.
                 </p>
-
-                <!-- Visi & Misi (Tanpa Card Box) -->
                 <div style="padding-top: 24px; border-top: 1px solid var(--border-subtle);">
                     <h3 style="font-size: 1.35rem; margin: 0 0 10px; color: var(--primary);">Visi</h3>
                     <p style="font-style: italic; color: #334155; margin-bottom: 24px; font-size: 1.02rem; line-height: 1.75;">
@@ -88,15 +76,11 @@
                     <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 0.88rem;">
                         <li style="display: flex; gap: 10px;">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" style="flex-shrink: 0; margin-top: 1px;"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
-                            <span><strong>Permendikbudristek No. 55/2024</strong> tentang Pencegahan dan Penanganan Kekerasan di PT.</span>
+                            <span><strong>Permendikbudristek No. 55/2024</strong> tentang Pencegahan dan Penanganan Kekerasan di Perguruan Tinggi.</span>
                         </li>
                         <li style="display: flex; gap: 10px;">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" style="flex-shrink: 0; margin-top: 1px;"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
                             <span><strong>Peraturan Rektor UPNVY No. 5/2023</strong> tentang Pencegahan &amp; Penanganan Kekerasan Seksual.</span>
-                        </li>
-                        <li style="display: flex; gap: 10px;">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" style="flex-shrink: 0; margin-top: 1px;"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
-                            <span><strong>KEP Rektor UPNVY No. 1377/2026</strong> tentang Pedoman Operasional Standar Satgas PPKS.</span>
                         </li>
                     </ul>
 

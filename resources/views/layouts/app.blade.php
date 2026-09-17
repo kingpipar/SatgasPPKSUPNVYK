@@ -6,24 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Website Resmi Satuan Tugas Pencegahan dan Penanganan Kekerasan Seksual (Satgas PPKS) UPN 'Veteran' Yogyakarta. Menjamin kampus aman, inklusif, dan bebas kekerasan seksual.">
     <title>@yield('title', 'Satgas PPKS') — UPN "Veteran" Yogyakarta</title>
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{ asset('images/logo-upn.png') }}">
-
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     @yield('styles')
 </head>
 <body>
 
-    <!-- =======================================================================
-         HEADER & NAVBAR (Warna Utama Brand: #3c745e Forest Green)
-         ======================================================================= -->
+    <!-- HEADER & NAVBAR (Warna Utama Brand: #3c745e Forest Green) -->
     <header class="site-header">
         <div class="container">
             <nav class="navbar">
@@ -54,7 +46,6 @@
                         <span class="brand-tagline">UPN "VETERAN" YOGYAKARTA</span>
                     </a>
                 </div>
-
                 <!-- Tombol Mobile Toggle -->
                 <button class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu Navigasi">
                     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -63,17 +54,12 @@
                         <line x1="3" y1="18" x2="21" y2="18"></line>
                     </svg>
                 </button>
-
-                <!-- Menu Navigasi Publik (Tanpa Login) -->
                 <ul class="nav-menu" id="navMenu">
-                    <!-- 1. Dashboard / Beranda -->
                     <li>
                         <a href="{{ route('beranda') }}" class="nav-link {{ request()->routeIs('beranda') ? 'active' : '' }}">
                             Dashboard
                         </a>
                     </li>
-
-                    <!-- 2. Profil / About Us (Dropdown: Profil Satgas, Logo & Filosofi, Struktur Kepengurusan) -->
                     <li class="nav-dropdown">
                         <a href="#" class="nav-link {{ request()->routeIs('profil.*') ? 'active' : '' }}" onclick="event.preventDefault();">
                             <span>Profil</span>
@@ -99,28 +85,21 @@
                             </li>
                         </ul>
                     </li>
-
-                    <!-- 3. Pedoman -->
                     <li>
                         <a href="{{ route('pedoman.index') }}" class="nav-link {{ request()->routeIs('pedoman.*') ? 'active' : '' }}">
                             Pedoman
                         </a>
                     </li>
-
-                    <!-- 4. Pelayanan -->
                     <li>
                         <a href="{{ route('pelayanan') }}" class="nav-link {{ request()->routeIs('pelayanan') ? 'active' : '' }}">
                             Pelayanan
                         </a>
                     </li>
-
-                    <!-- 5. Galeri -->
                     <li>
                         <a href="{{ route('galeri.index') }}" class="nav-link {{ request()->routeIs('galeri.*') ? 'active' : '' }}">
                             Galeri
                         </a>
                     </li>
-
                     <!-- Search Bar -->
                     <li style="margin-left: 8px;">
                         <form action="{{ route('pedoman.index') }}" method="GET" style="display: flex; align-items: center; gap: 6px;" role="search">
@@ -181,7 +160,6 @@
     <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
-                <!-- Kolom 4: Kontak Sesuai Ketentuan Prompt -->
                 <div class="footer-column">
                     <h5>Kontak & Alamat Resmi</h5>
                     <div class="footer-contact-item">
@@ -218,7 +196,7 @@
             <!-- Footer Bottom -->
             <div class="footer-bottom">
                 <div>
-                    &copy; {{ date('Y') }} Satgas PPKS UPN "Veteran" Yogyakarta. Seluruh hak cipta dilindungi.
+                    &copy; {{ date('Y') }} Universitas Pembangunan Nasional "Veteran" Yogyakarta.
                 </div>
                 <div>
                     Kerahasiaan data dan keselamatan pelapor/korban adalah komitmen tertinggi kami.

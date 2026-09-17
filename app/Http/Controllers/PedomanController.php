@@ -30,24 +30,11 @@ class PedomanController extends Controller
     }
 
     /**
-     * Tampilkan preview / embed file PDF secara aman
+     * Tampilkan preview file PDF langsung di browser (inline stream)
      */
     public function lihat(string $slug)
     {
-        $dokumen = $this->findDokumenBySlug($slug);
-
-        if (!$dokumen) {
-            abort(404, 'Dokumen pedoman tidak ditemukan.');
-        }
-
-        $disk = Storage::disk('public');
-
-        if (!$disk->exists($dokumen['file_path'])) {
-            return redirect()->route('pedoman.index')
-                ->with('warning', "File fisik untuk '{$dokumen['judul']}' belum ditambahkan di storage/app/public/{$dokumen['file_path']}. Silakan letakkan file PDF terlebih dahulu.");
-        }
-
-        return view('pages.pedoman.lihat', compact('dokumen'));
+        return $this->stream($slug);
     }
 
     /**
