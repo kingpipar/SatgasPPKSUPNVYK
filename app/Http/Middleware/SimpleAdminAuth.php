@@ -8,9 +8,6 @@ use Symfony\Component\HttpFoundation\Response;
 
 class SimpleAdminAuth
 {
-    /**
-     * Handle an incoming request.
-     */
     public function handle(Request $request, Closure $next): Response
     {
         if (!session()->get('admin_authenticated', false)) {
