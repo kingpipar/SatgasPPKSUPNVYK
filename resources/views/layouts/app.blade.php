@@ -23,20 +23,17 @@
                     <a href="{{ route('beranda') }}" class="brand-logo-item" title="UPN 'Veteran' Yogyakarta">
                         <img src="{{ asset('images/logo-upn.png') }}" 
                              alt="Logo UPN 'Veteran' Yogyakarta" 
-                             class="header-logo-img"
-                             onerror="this.onerror=null; this.src='{{ asset('images/logo-upn.svg') }}';">
+                             class="header-logo-img">
                     </a>
                     <a href="{{ route('beranda') }}" class="brand-logo-item" title="Satgas PPKS UPN 'Veteran' Yogyakarta">
                         <img src="{{ asset('images/logo-satgas.png') }}" 
                              alt="Logo Satgas PPKS" 
-                             class="header-logo-img"
-                             onerror="this.onerror=null; this.src='{{ asset('images/logo-satgas.svg') }}';">
+                             class="header-logo-img">
                     </a>
                     <a href="{{ route('beranda') }}" class="brand-logo-item" title="Kampus Merdeka">
                         <img src="{{ asset('images/logo-kampus-merdeka.png') }}" 
                              alt="Logo Kampus Merdeka" 
-                             class="header-logo-img"
-                             onerror="this.onerror=null; this.src='{{ asset('images/logo-kampus-merdeka.svg') }}';">
+                             class="header-logo-img">
                     </a>
 
                     <div class="brand-divider"></div>
@@ -100,17 +97,16 @@
                             Galeri
                         </a>
                     </li>
-                    <!-- Search Bar -->
                     <li style="margin-left: 8px;">
-                        <form action="{{ route('pedoman.index') }}" method="GET" style="display: flex; align-items: center; gap: 6px;" role="search">
+                        <form action="{{ route('cari') }}" method="GET" style="display: flex; align-items: center; gap: 6px;" role="search">
                             <div style="position: relative;">
                                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2.2" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); pointer-events: none;">
                                     <circle cx="11" cy="11" r="8"></circle>
                                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                                 </svg>
                                 <input type="text" name="q" id="navSearch"
-                                       placeholder="Cari dokumen..."
-                                       aria-label="Cari dokumen pedoman"
+                                       value="{{ request('q') }}"
+                                       aria-label="Pencarian seluruh website"
                                        style="width: 180px; padding: 7px 12px 7px 34px; border-radius: 20px; border: 1.5px solid rgba(255,255,255,0.35); background: rgba(255,255,255,0.12); color: #ffffff; font-size: 0.85rem; font-family: var(--font-body); outline: none; transition: all 0.2s;"
                                        onfocus="this.style.background='rgba(255,255,255,0.22)'; this.style.borderColor='rgba(255,255,255,0.7)'; this.style.width='210px'"
                                        onblur="this.style.background='rgba(255,255,255,0.12)'; this.style.borderColor='rgba(255,255,255,0.35)'; this.style.width='180px'">

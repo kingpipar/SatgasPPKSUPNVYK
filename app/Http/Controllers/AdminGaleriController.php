@@ -10,9 +10,7 @@ use Illuminate\Support\Str;
 
 class AdminGaleriController extends Controller
 {
-    /**
-     * Tampilkan form login password tunggal
-     */
+
     public function showLoginForm()
     {
         if (session('admin_authenticated')) {
@@ -22,9 +20,6 @@ class AdminGaleriController extends Controller
         return view('admin.login');
     }
 
-    /**
-     * Proses autentikasi password tunggal
-     */
     public function login(Request $request)
     {
         $request->validate([
@@ -46,9 +41,6 @@ class AdminGaleriController extends Controller
             ->withErrors(['password' => 'Kata sandi salah. Silakan periksa kembali kata sandi di file .env Anda.']);
     }
 
-    /**
-     * Logout dari sesi admin
-     */
     public function logout()
     {
         session()->forget('admin_authenticated');
@@ -56,9 +48,6 @@ class AdminGaleriController extends Controller
             ->with('info', 'Anda telah keluar dari panel kelola galeri.');
     }
 
-    /**
-     * Daftar album kegiatan di panel admin
-     */
     public function index()
     {
         $galeris = Galeri::withCount('fotos')
@@ -68,17 +57,11 @@ class AdminGaleriController extends Controller
         return view('admin.galeri.index', compact('galeris'));
     }
 
-    /**
-     * Form tambah kegiatan baru
-     */
     public function create()
     {
         return view('admin.galeri.create');
     }
 
-    /**
-     * Simpan data kegiatan baru beserta foto utama & multiple foto album
-     */
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -127,18 +110,14 @@ class AdminGaleriController extends Controller
             ->with('success', "Album kegiatan '{$galeri->judul_kegiatan}' berhasil disimpan!");
     }
 
-    /**
-     * Form edit album kegiatan
-     */
+    // Form edit album kegiatan
     public function edit(Galeri $galeri)
     {
         $galeri->load('fotos');
         return view('admin.galeri.edit', compact('galeri'));
     }
 
-    /**
-     * Update album kegiatan
-     */
+    // Update album kegiatan
     public function update(Request $request, Galeri $galeri)
     {
         $validated = $request->validate([
@@ -181,9 +160,7 @@ class AdminGaleriController extends Controller
             ->with('success', "Album kegiatan '{$galeri->judul_kegiatan}' berhasil diperbarui!");
     }
 
-    /**
-     * Hapus 1 foto dokumentasi dari album
-     */
+    // Hapus 1 foto dokumentasi dari album
     public function hapusFoto(GaleriFoto $foto)
     {
         $galeriId = $foto->galeri_id;
@@ -198,9 +175,7 @@ class AdminGaleriController extends Controller
         return back()->with('success', 'Foto dokumentasi berhasil dihapus.');
     }
 
-    /**
-     * Hapus album kegiatan beserta seluruh file foto fisiknya
-     */
+    // Hapus album kegiatan beserta seluruh file foto fisiknya
     public function destroy(Galeri $galeri)
     {
         $judul = $galeri->judul_kegiatan;

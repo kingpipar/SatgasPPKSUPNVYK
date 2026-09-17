@@ -1,9 +1,7 @@
 @extends('layouts.app')
-
 @section('title', 'Pelayanan & Alur Pelaporan — Satgas PPKS UPN "Veteran" Yogyakarta')
-
 @section('content')
-<!-- Page Banner -->
+
 <div class="page-banner">
     <div class="container">
         <div class="page-banner-content">
@@ -37,8 +35,6 @@
                      class="sop-img"
                      onerror="this.onerror=null; this.src='{{ asset('images/alur-pelaporan.svg') }}';">
             </div>
-
-            <!-- Tombol Tambahan Redirect ke Google Form -->
             <div style="margin-top: 30px; text-align: center;">
                 <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px;">
                     Sudah memahami alur di atas? Silakan klik tombol di bawah untuk mengisi formulir:
@@ -58,8 +54,6 @@
                 </a>
             </div>
         </div>
-
-        <!-- Hak Korban & Saksi -->
         <div id="hak" style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 36px; box-shadow: var(--shadow-sm); margin-bottom: 40px;">
             <div class="section-header" style="text-align: left; margin-bottom: 24px;">
                 <span class="section-tag">Hak Korban &amp; Pelapor</span>
@@ -86,8 +80,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- FAQ Interaktif -->
         <div id="faq" class="faq-container">
             <div class="section-header">
                 <span class="section-tag">Pertanyaan Umum</span>

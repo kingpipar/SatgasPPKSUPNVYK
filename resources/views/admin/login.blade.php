@@ -48,9 +48,6 @@
             </form>
 
             <div style="margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--border-subtle); text-align: center;">
-                <p style="font-size: 0.8rem; color: var(--text-muted);">
-                    Kata sandi tersimpan aman di konfigurasi <code>.env</code> (ADMIN_PASSWORD).
-                </p>
                 <a href="{{ route('beranda') }}" style="font-size: 0.84rem; color: var(--secondary); font-weight: 600; display: inline-block; margin-top: 8px;">
                     &larr; Kembali ke Beranda Publik
                 </a>

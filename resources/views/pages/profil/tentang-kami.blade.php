@@ -1,10 +1,8 @@
 @extends('layouts.app')
-
 @section('title', 'Tentang Kami - Visi & Misi')
 @section('meta_description', 'Profil dan latar belakang pembentukan Satgas PPKS, visi, misi, serta landasan hukum pencegahan kekerasan seksual di kampus.')
-
 @section('content')
-<!-- Page Header -->
+
 <div class="page-header">
     <div class="container">
         <h1 class="page-header-title">Tentang Satgas PPKS</h1>
@@ -23,7 +21,6 @@
 
 <section class="section">
     <div class="container container-narrow">
-        <!-- Latar Belakang -->
         <div class="card" style="margin-bottom: 32px;">
             <span class="section-badge">Latar Belakang</span>
             <h2 class="card-title" style="font-size: 1.6rem; margin-bottom: 16px;">Mewujudkan Kampus Merdeka Bebas Kekerasan Seksual</h2>
@@ -36,7 +33,6 @@
                 </p>
             </div>
         </div>
-
         <!-- Visi & Misi Grid -->
         <div class="grid-2" style="margin-bottom: 32px;">
             <div class="card" style="border-top: 4px solid var(--secondary);">
@@ -69,7 +65,6 @@
                 </ul>
             </div>
         </div>
-
         <!-- Nilai-Nilai Dasar Penanganan -->
         <div class="card">
             <span class="section-badge">Prinsip Kerja</span>

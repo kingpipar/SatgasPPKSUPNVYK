@@ -1,10 +1,8 @@
 @extends('layouts.app')
-
 @section('title', 'Struktur Organisasi')
 @section('meta_description', 'Struktur kepengurusan dan susunan panitia/tim Satuan Tugas Pencegahan dan Penanganan Kekerasan Seksual (Satgas PPKS).')
-
 @section('content')
-<!-- Page Header -->
+
 <div class="page-header">
     <div class="container">
         <h1 class="page-header-title">Struktur Organisasi Satgas PPKS</h1>
@@ -23,7 +21,6 @@
 
 <section class="section">
     <div class="container">
-        <!-- Pengantar Regulasi Keanggotaan -->
         <div class="card" style="margin-bottom: 40px; background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);">
             <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
                 <div style="width: 52px; height: 52px; border-radius: 12px; background: var(--secondary); color: white; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
@@ -44,10 +41,7 @@
                 </div>
             </div>
         </div>
-
-        <!-- Bagan Hierarki Visual -->
         <div style="text-align: center; margin-bottom: 48px;">
-            <!-- Tingkat 1: Ketua & Sekretaris -->
             <div style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 32px;">
                 <div class="card" style="width: 320px; text-align: center; border-top: 4px solid var(--primary);">
                     <div style="width: 64px; height: 64px; border-radius: 50%; background: #0b192c; color: white; display: flex; align-items: center; justify-content: center; margin: 0 auto 14px; font-weight: 800; font-size: 1.2rem;">
@@ -69,14 +63,9 @@
                     <span style="display: inline-block; padding: 2px 10px; background: #e2e8f0; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 600;">Unsur Tendik</span>
                 </div>
             </div>
-
-            <!-- Garis Penghubung Simbolis -->
             <div style="width: 2px; height: 30px; background: #cbd5e1; margin: 0 auto;"></div>
         </div>
-
-        <!-- Tingkat 2: Tiga Divisi Kerja -->
         <div class="grid-3">
-            <!-- Divisi 1 -->
             <div class="card">
                 <div class="card-icon" style="background: rgba(14, 165, 233, 0.1); color: #0284c7;">
                     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -92,8 +81,6 @@
                     <strong>Anggota:</strong> Perwakilan Dosen dan Mahasiswa Aktif
                 </div>
             </div>
-
-            <!-- Divisi 2 -->
             <div class="card">
                 <div class="card-icon" style="background: rgba(220, 38, 38, 0.1); color: #dc2626;">
                     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -109,8 +96,6 @@
                     <strong>Anggota:</strong> Ahli Hukum Kampus & Tim Pemeriksa Bersertifikat
                 </div>
             </div>
-
-            <!-- Divisi 3 -->
             <div class="card">
                 <div class="card-icon" style="background: rgba(16, 185, 129, 0.1); color: #059669;">
                     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

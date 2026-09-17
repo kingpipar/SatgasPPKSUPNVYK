@@ -135,4 +135,89 @@ class SatgasWebTest extends TestCase
         $resAdmin->assertStatus(200);
         $resAdmin->assertSee('Daftar Album Kegiatan Galeri');
     }
+
+    /**
+     * Test Fitur Pencarian Global Website (/cari)
+     */
+    public function test_global_search_works(): void
+    {
+        // 1. Akses halaman cari tanpa query
+        $resEmpty = $this->get('/cari');
+        $resEmpty->assertStatus(200);
+        $resEmpty->assertSee('Pencarian Website');
+
+        // 2. Cari istilah pedoman
+        $resPedoman = $this->get('/cari?q=rektor');
+        $resPedoman->assertStatus(200);
+        $resPedoman->assertSee('Peraturan Rektor');
+
+        // 3. Cari istilah profil / filosofi
+        $resProfil = $this->get('/cari?q=filosofi');
+        $resProfil->assertStatus(200);
+        $resProfil->assertSee('Logo dan Filosofi');
+
+        // 4. Cari layanan pengaduan
+        $resLapor = $this->get('/cari?q=pengaduan');
+        $resLapor->assertStatus(200);
+        $resLapor->assertSee('Pelayanan &amp; Alur Pengaduan', false);
+    }
+
+    /**
+     * Test Statistik Kasus ditampilkan di Beranda
+     */
+    public function test_beranda_displays_statistik_kasus(): void
+    {
+        $response = $this->get('/');
+        $response->assertStatus(200);
+        $response->assertSee('Statistik Penanganan Kasus');
+        $response->assertSee('Total Laporan Masuk');
+        $response->assertSee('28');
+        $response->assertSee('Telah Selesai');
+        $response->assertSee('Sedang Ditangani (On Going)');
+        $response->assertSee('Kekerasan Seksual');
+        $response->assertSee('25');
+        $response->assertSee('Catatan Kriteria Penyelesaian Kasus:');
+        $response->assertSee('surat rekomendasi kepada Rektor', false);
+    }
+
+    /**
+     * Test Admin dapat mengakses dan mengupdate data statistik
+     */
+    public function test_admin_can_access_and_update_statistik(): void
+    {
+        // Tanpa autentikasi, harus redirect ke login admin
+        $resGuest = $this->get('/kelola-galeri/statistik');
+        $resGuest->assertRedirect('/kelola-galeri/masuk');
+
+        // Dengan autentikasi admin, halaman edit bisa diakses
+        $resAuth = $this->withSession(['admin_authenticated' => true])->get('/kelola-galeri/statistik');
+        $resAuth->assertStatus(200);
+        $resAuth->assertSee('Statistik Penanganan Kasus Kekerasan');
+
+        // Update data statistik
+        $resUpdate = $this->withSession(['admin_authenticated' => true])->put('/kelola-galeri/statistik', [
+            'tahun_periode'           => 'Tahun 2026 / 2027',
+            'total_masuk'             => 30,
+            'telah_selesai'           => 29,
+            'on_going'                => 1,
+            'kekerasan_fisik'         => 1,
+            'kekerasan_psikis'        => 3,
+            'perundungan'             => 0,
+            'kekerasan_seksual'       => 25,
+            'diskriminasi_intoleransi'=> 0,
+            'kebijakan_kekerasan'     => 1,
+            'catatan_kriteria'        => 'Kasus selesai berdasarkan surat rekomendasi.',
+        ]);
+
+        $resUpdate->assertRedirect(route('admin.statistik.edit'));
+        $resUpdate->assertSessionHas('success');
+
+        $this->assertDatabaseHas('statistik_kasus', [
+            'tahun_periode' => 'Tahun 2026 / 2027',
+            'total_masuk'   => 30,
+            'telah_selesai' => 29,
+            'on_going'      => 1,
+        ]);
+    }
 }
+

@@ -1,10 +1,8 @@
 @extends('layouts.app')
-
 @section('title', 'Tugas & Wewenang')
 @section('meta_description', 'Tugas pokok, fungsi, wewenang, dan tanggung jawab hukum Satuan Tugas Pencegahan dan Penanganan Kekerasan Seksual (Satgas PPKS).')
-
 @section('content')
-<!-- Page Header -->
+
 <div class="page-header">
     <div class="container">
         <h1 class="page-header-title">Tugas & Wewenang Satgas PPKS</h1>
@@ -23,7 +21,6 @@
 
 <section class="section">
     <div class="container container-narrow">
-        <!-- Rincian Tugas Pokok -->
         <div class="card" style="margin-bottom: 32px;">
             <span class="section-badge">Tugas Pokok (Pasal 34)</span>
             <h2 class="card-title" style="font-size: 1.5rem; margin-bottom: 16px;">Tugas Utama Satgas PPKS</h2>
@@ -54,8 +51,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Wewenang Satgas PPKS -->
         <div class="card" style="margin-bottom: 32px; border-left: 4px solid var(--primary);">
             <span class="section-badge">Wewenang Hukum</span>
             <h2 class="card-title" style="font-size: 1.5rem; margin-bottom: 16px;">Wewenang Satgas PPKS</h2>
@@ -69,8 +64,6 @@
                 <li><strong>Bermitra dengan Lembaga Eksternal:</strong> Menjalin kerja sama rujukan dengan Unit Pelaksana Teknis Daerah Perlindungan Perempuan dan Anak (UPTD PPA), kepolisian, dan rumah sakit.</li>
             </ul>
         </div>
-
-        <!-- Jenjang Rekomendasi Sanksi -->
         <div class="card">
             <span class="section-badge">Tindak Lanjut Laporan</span>
             <h2 class="card-title" style="font-size: 1.5rem; margin-bottom: 16px;">Klasifikasi Rekomendasi Sanksi Administratif</h2>

@@ -24,7 +24,6 @@
     <div class="container">
         <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 36px; box-shadow: var(--shadow-md); margin-bottom: 48px;">
             <div class="section-header" style="margin-bottom: 30px;">
-                <span class="section-tag">Bagan Organisasi</span>
                 <h2 class="section-title">Bagan Struktur Organisasi Resmi</h2>
                 <p class="section-desc">
                     Hubungan koordinatif dan fungsi operasional Satgas PPKS di lingkungan UPN "Veteran" Yogyakarta.
@@ -48,7 +47,6 @@
         </div>
 
         <div class="section-header">
-            <span class="section-tag">Tupoksi Divisi</span>
             <h2 class="section-title">Bidang dan Divisi Operasional</h2>
             <p class="section-desc">
                 Pembagian peran strategis dalam mengawal penanganan komprehensif tanpa konflik kepentingan.
@@ -57,8 +55,6 @@
 
         <div class="card-grid">
             <div class="feature-card">
-                <div class="feature-icon-box">
-                </div>
                 <h4>Divisi Pencegahan &amp; Sosialisasi</h4>
                 <p style="margin-bottom: 16px;">
                     Merancang kurikulum edukasi, modul anti-kekerasan seksual dalam PKKBN/Ospek, pelatihan calon satgas fakultas, serta kampanye kesadaran publik di media kampus.
@@ -68,8 +64,6 @@
                 </div>
             </div>
             <div class="feature-card">
-                <div class="feature-icon-box">
-                </div>
                 <h4>Divisi Penanganan &amp; Investigasi</h4>
                 <p style="margin-bottom: 16px;">
                     Menerima aduan resmi, melakukan verifikasi bukti faktual, pemanggilan pihak-pihak terkait dalam ruang tertutup yang aman, serta menyusun berita acara pemeriksaan.
@@ -79,8 +73,6 @@
                 </div>
             </div>
             <div class="feature-card">
-                <div class="feature-icon-box">
-                </div>
                 <h4>Divisi Pendampingan &amp; Pemulihan</h4>
                 <p style="margin-bottom: 16px;">
                     Memberikan pendampingan psikologis, memfasilitasi konselor profesional, mendampingi proses hukum di kepolisian bila diminta, serta menjamin kelancaran akademik korban.
@@ -90,11 +82,8 @@
                 </div>
             </div>
         </div>
-
-        <!-- Komitmen Kerahasiaan & Integritas Pengurus -->
         <div style="margin-top: 48px; background: linear-gradient(135deg, #f0f7f3 0%, #e2efe8 100%); border: 1px solid var(--primary-border); border-radius: var(--radius-xl); padding: 32px; display: flex; align-items: center; gap: 24px; flex-wrap: wrap;">
-            <div style="width: 56px; height: 56px; border-radius: var(--radius-full); background: var(--primary); color: #ffffff; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-            </div>
+
             <div style="flex: 1; min-width: 260px;">
                 <h4 style="font-size: 1.25rem; color: var(--primary); margin-bottom: 6px;">
                     Pakta Integritas dan Sumpah Kerahasiaan Pengurus

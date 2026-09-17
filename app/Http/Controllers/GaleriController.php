@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class GaleriController extends Controller
 {
-    /**
-     * Tampilkan grid listing album kegiatan galeri
-     */
+    
+    // Tampilkan grid listing album kegiatan galeri
+    
     public function index()
     {
         $galeris = Galeri::withCount('fotos')
@@ -20,10 +20,10 @@ class GaleriController extends Controller
         return view('pages.galeri.index', compact('galeris'));
     }
 
-    /**
-     * Tampilkan detail kegiatan galeri beserta seluruh foto dokumentasinya
-     * Menggunakan Route Model Binding dengan slug
-     */
+    
+    // Tampilkan detail kegiatan galeri beserta seluruh foto dokumentasinya
+    // Menggunakan Route Model Binding dengan slug
+    
     public function show(Galeri $galeri)
     {
         $galeri->load('fotos');

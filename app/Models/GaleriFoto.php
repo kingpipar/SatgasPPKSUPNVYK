@@ -18,9 +18,6 @@ class GaleriFoto extends Model
         'urutan',
     ];
 
-    /**
-     * Relasi balik ke Galeri
-     */
     public function galeri(): BelongsTo
     {
         return $this->belongsTo(Galeri::class, 'galeri_id');

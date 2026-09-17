@@ -25,25 +25,16 @@ class Galeri extends Model
         'tanggal_kegiatan' => 'date',
     ];
 
-    /**
-     * Gunakan slug sebagai route model binding
-     */
     public function getRouteKeyName(): string
     {
         return 'slug';
     }
 
-    /**
-     * Relasi ke foto-foto dalam album, diurutkan berdasarkan kolom urutan
-     */
     public function fotos(): HasMany
     {
         return $this->hasMany(GaleriFoto::class, 'galeri_id')->orderBy('urutan', 'asc');
     }
 
-    /**
-     * Buat slug otomatis jika belum terisi saat create
-     */
     protected static function booted(): void
     {
         static::creating(function (Galeri $galeri) {

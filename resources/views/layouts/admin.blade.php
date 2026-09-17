@@ -23,22 +23,22 @@
                 </div>
                 <div>
                     <h2 style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: #ffffff; line-height: 1.2;">
-                        Panel Kelola Galeri Satgas PPKS
+                        Panel Kelola Satgas PPKS
                     </h2>
                     <span style="font-size: 0.76rem; color: #94a3b8;">
-                        Manajemen Dokumentasi & Album Kegiatan Kampus
+                        Manajemen Dokumentasi Kegiatan &amp; Statistik Kasus
                     </span>
                 </div>
             </div>
 
             <div style="display: flex; align-items: center; gap: 12px;">
-                <a href="{{ route('galeri.index') }}" target="_blank" class="btn btn-outline-white btn-sm" style="background: #3c745e;">
+                <a href="{{ route('beranda') }}" target="_blank" class="btn btn-outline-white btn-sm" style="background: #3c745e;">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                         <polyline points="15 3 21 3 21 9"></polyline>
                         <line x1="10" y1="14" x2="21" y2="3"></line>
                     </svg>
-                    <span>Lihat Galeri Publik</span>
+                    <span>Lihat Website</span>
                 </a>
 
                 @if(session('admin_authenticated'))
@@ -56,6 +56,27 @@
                 @endif
             </div>
         </div>
+
+        @if(session('admin_authenticated'))
+            <!-- Admin Navigation Tabs -->
+            <div class="container" style="margin-top: 14px; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 10px; display: flex; gap: 8px;">
+                <a href="{{ route('admin.galeri.index') }}" 
+                   style="padding: 7px 16px; border-radius: var(--radius-md); font-size: 0.88rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s; {{ request()->routeIs('admin.galeri.*') ? 'background: rgba(255,255,255,0.22); color: #ffffff;' : 'color: #cbd5e1; background: transparent;' }}"
+                   onmouseenter="this.style.background='rgba(255,255,255,0.18)'; this.style.color='#fff'"
+                   onmouseleave="{{ request()->routeIs('admin.galeri.*') ? 'this.style.background=\'rgba(255,255,255,0.22)\';' : 'this.style.background=\'transparent\'; this.style.color=\'#cbd5e1\';' }}">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                    <span>Galeri Kegiatan</span>
+                </a>
+
+                <a href="{{ route('admin.statistik.edit') }}" 
+                   style="padding: 7px 16px; border-radius: var(--radius-md); font-size: 0.88rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s; {{ request()->routeIs('admin.statistik.*') ? 'background: rgba(255,255,255,0.22); color: #ffffff;' : 'color: #cbd5e1; background: transparent;' }}"
+                   onmouseenter="this.style.background='rgba(255,255,255,0.18)'; this.style.color='#fff'"
+                   onmouseleave="{{ request()->routeIs('admin.statistik.*') ? 'this.style.background=\'rgba(255,255,255,0.22)\';' : 'this.style.background=\'transparent\'; this.style.color=\'#cbd5e1\';' }}">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    <span>Statistik Kasus</span>
+                </a>
+            </div>
+        @endif
     </header>
 
     <!-- Main Admin Content -->

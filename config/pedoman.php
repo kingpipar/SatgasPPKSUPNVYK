@@ -1,14 +1,5 @@
 <?php
 
-/**
- * Konfigurasi Dokumen Pedoman Resmi Satgas PPKS UPN "Veteran" Yogyakarta
- *
- * File PDF disimpan di direktori: storage/app/public/pedoman/
- * Diakses melalui Storage::disk('public')->download() dan route viewer preview.
- *
- * Hanya daftarkan file yang BENAR-BENAR ADA di storage.
- */
-
 return [
     'dokumen' => [
         [
